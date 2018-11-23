@@ -11,13 +11,13 @@
 FROM pablosan/bottle-py3
 
 # Install the app
-ADD server.py /opt/bottlepy
+ADD server.py /opt/server/
 
 # Install python packages
-RUN pip3 install bottle requests
+RUN pip3 install bottle 
 
 # Expose ports
-EXPOSE 8080
+EXPOSE 80
 
 # Define default command
-ENTRYPOINT ["/usr/bin/python3", "/opt/bottlepy/server.py"]
+ENTRYPOINT ["/usr/bin/python3", "/opt/server/server.py"]
