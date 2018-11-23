@@ -9,5 +9,5 @@ docker-compose up -d
 ```
 
 acess through:
-<http://localhost:8080/ip>
+<http://[IP|localhost]:8080/ip> or 
 
